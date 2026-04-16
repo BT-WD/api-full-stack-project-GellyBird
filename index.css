@@ -1,1 +1,19 @@
+#mainHeader {
+   display:flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: auto;
+   align-items: center;
+   column-gap: 2em;
+}
 
+.headerItem {
+    position: relative;
+    text-align: center;
+}
+
+#userImg {
+    width: 60px;
+    height: auto;
+    margin-left: auto;
+}

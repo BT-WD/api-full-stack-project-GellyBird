@@ -9,6 +9,11 @@ p {
   font-family: "IM Fell DW Pica SC", serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 #headerExtender {
   display: block;
   background-image:
@@ -84,16 +89,12 @@ p {
 #homeStats {
   position: fixed;
   width: 100vw;
-  height: 77%;
+  height: calc(100vh - 300px);
   background-color: antiquewhite;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 5vw;
-  outline-width: 100%;
-  outline-color: black;
-  outline-offset: -5px;
-  outline-style: double;
 }
 
 .bodyItem {
@@ -112,7 +113,7 @@ p {
 
 #bestStats {
   margin-left: 4vw;
-  row-gap: 4%;
+  row-gap: 15px;
 }
 
 .statBox {
@@ -123,14 +124,20 @@ p {
 
 #favMuseumBox {
   position: relative;
+  height: auto;
+  width: 100%;
 }
 
 #bestCategoryBox {
   position: relative;
+    height: auto;
+  width: 100%;
 }
 
 #bestStreakBox {
   position: relative;
+    height: auto;
+  width: 100%;
 }
 
 .statText {
@@ -139,4 +146,17 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5vw;
+}
+
+#topScores{
+  display: flex;
+}
+
+#topScoresBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: auto;
+  height: 26vw;
+  font-size: 1.57vw;
 }
